@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <h1>Marmeto</h1>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="header">
+                <button class="close-btn">&times;</button>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <img src="./images/logo.png" alt="">
+            <h1>Cart</h1>
+            <p>Home > <span>Cart</span></p>
+        </div>
+
+        <div class="cart-container">
+            <!-- Cart Items Table -->
+            <div class="cart-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-list">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cart Totals -->
+            <div class="cart-totals">
+                <h2>Cart Totals</h2>
+                <p style="color:#9F9F9F; font-size: 16px;">Subtotal: <span id="subtotal">₹ 0.00</span></p>
+                <p style="font-size: 16px;">Total: <span id="total" style="color:#B88E2F; font-size: 20px;">₹ 0.00</span></p>
+                <button id="checkout">Check Out</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <img src="./images/footer.png" alt="Feature">
+        </footer>
+    </div>
+</body>
+
+</html>
